@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>GMR - Briefcase</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/bootstrap.min .css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body id="invoice">
+		<!-- Header Navbar -->
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<div class="container">
+					<a class="navbar-brand" href="index.html">GMR</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item active">
+								<a class="nav-link" href="index.html"> Home </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="my-projects.html">My projects</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about-me.html">About Me</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact-me.html">Contact Me!</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Main Content -->
+		<div class="main container mt-5">
+			<h4 class="h2 text-center mb-4">About Me</h4>
+			<section class="summary">
+				<article class="card p-4">
+					<div class="card-body">
+						<p class="h3">About myself</p>
+						<hr>
+						<p class="text card-text text-justify">
+							My name is Gerardo. I'm twenty one years old. I'm in the seventh semester of computer systems engineering.
+							About my career I like to code and understand how the computer systems work. I like to make those tools that everyone use day after day.
+						</p>
+						<img class="img-fluid mx-auto d-block m-5" width="500px" src="img/undraw_developer_activity_bv83.svg">
+						<p class="h3 mt-5">What are my hard and soft skills?</p>
+						<hr>
+						<p class="h5 mb-4">My hard skills are:</p>
+						<ul class="list-group mb-4">
+							<li class="list-group-item">Web development 
+								<i class="fab fa-node-js" style="color: #026e00;"></i> 
+								<i class="fab fa-php" style="color: #8892BF;"></i> 
+								<i style="color: #336E9F;" class="fab fa-python"></i>
+							</li>
+							<li class="list-group-item">MySQL and MongoDB databases</li>
+							<li class="list-group-item">Git and Github</li>
+							<li class="list-group-item">I know Python, Java, Javascipt, R, and PHP</li>
+						</ul>
+						
+						<p class="h5 mb-4">My soft skills are:</p>
+						<ul class="list-group mb-4">
+							<li class="list-group-item">Self-discipline</li>
+							<li class="list-group-item">Autodidact</li>
+							<li class="list-group-item">Perseverance</li>
+						</ul>
+						<p class="h3 mt-5">What is my biggest strength?</p>
+						<hr>
+						<p class="text card-text text-justify fs-1">
+							I am a dedicated person who will do what you tell me in the best way. If I don't know how to do it, I will research, then, I will do it. I am willing to learn everything.
+						</p>
+						<img class="img-fluid mx-auto d-block mt-5" width="300px" src="img/undraw_Process_re_gws7.svg">
+						<p class="h3 mt-5">What am I looking for?</p>
+						<hr>
+						<ul class="list-group mb-4">
+							<li class="list-group-item">Growth opportunities</li>
+							<li class="list-group-item">Willingness to teach so that I can learn much more.</li>
+							<li class="list-group-item">Good working environment</li>
+						</ul>
+						<img class="img-fluid mx-auto d-block mt-5" width="300px" src="img/undraw_Agreement_re_d4dv.svg">
+					</div>
+				</article>
+			</section>
+		</div>
+
+		<!-- Footer -->
+		<footer class="navbar navbar-expand-lg navbar-dark bg-dark mt-4">
+			<div class="container d-flex justify-content-center">
+				<p class="text-white mb-0">GMR - 2021</p>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+		<!-- My JS -->
+		<script src="js/html2pdf.bundle.min.js"></script>
+		<!--<script>
+			function generatePDF() {
+				// Choose the element that our invoice is rendered in.
+				const element = document.getElementById('invoice');
+				// Choose the element and save the PDF for our user.
+				html2pdf().from(element).save();
+			}
+		</script>-->
+	</body>
+</html>

@@ -1,0 +1,51 @@
+.jumbotron .bio p {
+	font-size: 18px;
+}
+
+.avatar {
+	width: 250px;
+	height: auto;
+	border-radius: 1000px;
+}
+
+i {
+	transition: 0.3s;
+}
+
+.gith:hover, .tw:hover, .link:hover {
+	color:#343a40!important;
+} 
+
+.text {
+	font-size: 16px;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+ul li {
+	padding: 10px;
+	margin-bottom: 5px;
+}
+
+.skills-card-icon {
+	font-size: 40px;
+	margin-bottom: 10px;
+	color: #343a40;
+}
+
+.card p {
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+	.jumbotron .container .bio {
+		text-align: center;
+	}
+
+	h3 {
+		text-align: center !important;
+	}
+}
